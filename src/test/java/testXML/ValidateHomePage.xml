@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Home Page Validation" parallel="false" verbose="1">
+    <listeners>
+        <listener class-name="testHelper.Listeners"></listener>
+    </listeners>
+    <test preserve-order="true" name="Validate Home Page">
+        <classes>
+            <class name="testcases.HomePageTest">
+                <methods>
+                    <include name="verifyHomePageTitle"/>
+                    <include name="verifyCLickOnReserveADeskButton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
